@@ -1,24 +1,29 @@
-# README
+# Installation
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+1. Установить зависимости.
 
-Things you may want to cover:
+```bash
+bundle i
+```
+2. Настроить соединение с базой: config/database.yml
 
-* Ruby version
+3. Применить миграцию
 
-* System dependencies
+```bash
+rails db:migrate
+```
 
-* Configuration
+3. Заполнить тестовыми данными
 
-* Database creation
+```bash
+rails db:seed
+```
 
-* Database initialization
+3. Запустить сервер
 
-* How to run the test suite
+```bash
+rails s
+```
+## License
+[MIT](https://choosealicense.com/licenses/mit/)
 
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
